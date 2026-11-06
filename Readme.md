@@ -19,5 +19,22 @@
   - Arbitrary Arguments (*args and **kwargs): `When you don't know beforehand how many arguments a user might pass`
     - *args: Receives a tuple of positional arguments.
     - **kwargs: Receives a dictionary of keyword arguments.
-- 
+
+
+# Classes
+
+- In Python, a class is a blueprint or template for creating objects. It bundles data (attributes) and behavior (methods) together into a single package, allowing you to write structured and reusable object-oriented code.
+
+```
+class Dog:
+    species = "Canine"  # Class variable
+
+    def __init__(self, name, breed):
+        self.name = name    # Instance variable (unique to each dog)
+        self.breed = breed  # Instance variable
+
+# Creating distinct objects with unique data
+dog1 = Dog("Buddy", "Golden Retriever")
+dog2 = Dog("Rex", "German Shepherd")
+```
 
