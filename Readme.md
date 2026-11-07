@@ -42,6 +42,54 @@ dog2 = Dog("Rex", "German Shepherd")
 
 - Large Language Models (LLMs) are machine learning models trained on vast amount of textual data to generate and understand human-like language. These models can perform a wide range of natural language processing tasks from text generation to sentiment analysis and summarisation.
 
+- **An LLM has no memory.** Every time you call it, it's a completely blank slate. It does *not* remember your previous message.
+
+- stateful model - we user AI server memory
+
+```
+global previous_id
+try:
+  response = client.interactions.create(
+    model="gemini-2.5-flash",
+    input=user_message,
+    previous_interaction_id=previous_id
+  )
+
+  previous_id = response.id
+
+  return response.output_text
+```
+
+- stateless model - we use a list or dictonary to store data and then send it to the agent everytime.
+
+```
+conversation = []
+
+def chat(user_message):
+    conversation.append({
+        "type": "user_input",
+        "content": [
+            {"type": "text", "text": user_message}
+        ]
+    })
+  
+    try:
+        response = client.interactions.create(
+            model="gemini-3.5-flash",
+            input=conversation
+        )
+        reply = response.output_text
+    except Exception as e:
+        return f"Sorry, something went wrong: {e}"
+
+    conversation.extend([
+        step.model_dump(exclude_none=True)
+        for step in response.steps
+    ])
+    return reply
+```
+
+
 # Error handling
 
 `try`: Runs the risky code that might cause an error.
@@ -66,3 +114,4 @@ else:
 finally:
     print("Execution complete.")
 ```
+
