@@ -38,3 +38,6 @@ dog1 = Dog("Buddy", "Golden Retriever")
 dog2 = Dog("Rex", "German Shepherd")
 ```
 
+# LLM
+
+- Large Language Models (LLMs) are machine learning models trained on vast amount of textual data to generate and understand human-like language. These models can perform a wide range of natural language processing tasks from text generation to sentiment analysis and summarisation.
