@@ -79,6 +79,15 @@ def chatState(user_message):
     except Exception as e:
         return f"Sorry, something went wrong: {e}"
 
-print(chat("Hi! My name is Megha. Please remember it."))
-print("---")
-print(chat("What is my name?"))
+# print(chat("Hi! My name is Megha. Please remember it."))
+# print("---")
+# print(chat("What is my name?"))
+
+print("===============")
+
+print(chat("I love sci-fi and thrillers, but I can't stand horror movies."))
+print(chat("Suggest me a movie to watch tonight."))
+print(chat("Why did you pick that one?"))
+
+def reset():
+    return conversation.clear()
