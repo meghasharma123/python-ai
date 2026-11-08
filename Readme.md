@@ -115,3 +115,24 @@ finally:
     print("Execution complete.")
 ```
 
+# Files
+
+- `with` is a safety net: it **automatically closes the file** when the block ends — even if something crashes midway. Think of it as the well-mannered guest who shuts the door behind them. 🚪
+
+- Without `with`, you'd have to remember `f.close()` yourself — and forgetting it can mean lost data or locked files. So: always use `with`.
+
+# API
+
+- requests.get(url, params={"api_key": "YOUR_KEY"})
+- response = requests.get(url, params={"from": "USD", "to": "EUR"})
+
+import requests
+response = requests.get(url)
+print(response.json())
+
+`status_code` tells us if the call worked:
+- **200** → success
+- **404** → not found (wrong address)
+- **500** → the server had a problem
+
+Now let's read the actual data. `.json()` turns the answer into a Python dictionary

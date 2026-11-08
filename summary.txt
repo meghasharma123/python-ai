@@ -1,0 +1,24 @@
+Here is a summary of the **Production Meeting (May 29)**, including key issues discussed and assigned action items:
+
+---
+
+### **Executive Summary**
+* **Production Deficit:** Produced **4,200 units** against a target of **5,000 units** (shortfall of 800 units) due to 2 days of downtime on Machine 3.
+
+---
+
+### **Key Issues Identified**
+1. **Machine Downtime:** Machine 3 was out of order for 2 days (now repaired).
+2. **Quality Defects:** 80 units rejected due to improper paint drying.
+3. **Supply Delay:** Steel supply is delayed and will not arrive until Thursday.
+
+---
+
+### **Action Items & Deadlines**
+
+| Assignee | Department | Task / Action Item | Deadline |
+| :--- | :--- | :--- | :--- |
+| **Vikram** | Quality | Send a short report on the paint issue to Meena | **Tomorrow (May 30)** |
+| **Suresh** | Store | Track and receive the delayed steel stock | **Thursday** |
+| **Anjali** | Maintenance | Complete preventative checks on all machines | **Friday** |
+| **Ramesh** | Production | Plan extra shifts to make up for the 800-unit backlog | **As soon as possible** |
