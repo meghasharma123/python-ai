@@ -136,3 +136,9 @@ print(response.json())
 - **500** → the server had a problem
 
 Now let's read the actual data. `.json()` turns the answer into a Python dictionary
+
+# Fastapi
+
+- To install -> `pip install "fastapi[standard]"`
+- To run -> `fastapi dev fileName`
+- 
