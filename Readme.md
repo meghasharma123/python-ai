@@ -141,4 +141,3 @@ Now let's read the actual data. `.json()` turns the answer into a Python diction
 
 - To install -> `pip install "fastapi[standard]"`
 - To run -> `fastapi dev fileName`
-- 
